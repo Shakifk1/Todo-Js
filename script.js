@@ -1,11 +1,9 @@
 const addNewListPopUp = document.querySelector('#addNewList');
 const inputList = document.querySelector('#inputBoxList');
 const inputItem = document.querySelector('#inputBoxItem');
-const addNewListPopUpBtn = document.querySelector('#add-new-list');
 const addNewItemPopUp = document.querySelector('#add-new-item-box');
 const addNewListBtn = document.querySelector('.add-new-list-btn');
 const addNewItemBtn = document.querySelector('.add-new-item-btn');
-const closePopUp = document.querySelector('.close');
 const header = document.querySelector('.header');
 const homeText = document.querySelector('.noTodo');
 const parentBox = document.querySelector('.boxes');
@@ -17,6 +15,7 @@ const listClose = document.getElementById("listClose");
 
 
 
+const addNewListPopUpBtn = document.querySelector('#add-new-list');
 addNewListPopUpBtn.addEventListener("click", () => {
     addNewListPopUp.style.display = "block";
     blur.style.filter = "blur(8px)";
@@ -24,6 +23,7 @@ addNewListPopUpBtn.addEventListener("click", () => {
 });
 
 
+const closePopUp = document.querySelector('.close');
 closePopUp.addEventListener("click", () => {
     addNewListPopUp.style.display = "none";
     blur.style.filter = "none";
@@ -121,6 +121,7 @@ function createCard() {
             blur.style.filter = "blur(8px)";
             console.log(e.target.dataset);
             selectedCardId = e.target.dataset.cardId;
+
 
 
         })

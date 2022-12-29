@@ -60,6 +60,7 @@ body {
     width: 250px;
     border: 2px solid #e84343;
     border-radius: 0.5rem;
+    padding: 1.5em;
     margin: 3rem;
     background-color: #fff;
     box-shadow: 10px 10px 10px #0a0a0a29;
@@ -74,6 +75,7 @@ body {
     text-align: center;
     color: black;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 .completed {
@@ -290,6 +292,7 @@ body {
 .tasklistitem {
     font-size: 1.5rem;
     text-align: center;
+    word-wrap: break-word;
 }
 
 .trip-flex-mobile {
@@ -318,175 +321,3 @@ body {
     margin: auto;
     color: #fff;
 }
-/* 
-@media screen and (min-width: 320px) and (max-width: 800px) {
-    body {
-        font-family: 'Robto', sans-serif;
-        margin: 1rem;
-        padding: 0rem;
-    }
-    .display-none {
-        display: none;
-    }
-    .list-styling {
-        list-style-type: none;
-    }
-    .tasklistitem {
-        font-size: 1.5rem;
-        text-align: center;
-        display: none;
-    }
-    .boxes {
-        padding: 0rem;
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        width: 100%;
-        row-gap: 0;
-    }
-    .boxes i {
-        display: none;
-    }
-    .single-style div {
-        min-height: 350px;
-        height: 350px;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    .single-style {
-        margin: auto;
-    }
-    .single-style div .tasklistitem {
-        display: block;
-    }
-    .box {
-        max-height: 80px;
-        min-height: 80px;
-        height: 80px;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1rem;
-        background-color: #fff;
-    }
-    .subhead {
-        text-align: left;
-        color: black;
-        font-weight: bold;
-        padding-left: 1rem;
-    }
-    .heading {
-        font-size: 2.5rem;
-        /* float: left;
- */
-    /* }
-    .add-list {
-        /* float: right; */
-     /*   font-size: 2.5rem;
-    }
-    .box-item-add {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        right: 0;
-        width: 328px;
-        height: fit-content;
-        background-color: whitesmoke;
-        box-shadow: 10px 10px 10px #0a0a0a29;
-        border: 1px solid #e74c3c;
-        border-radius: 10px;
-        margin: auto;
-        padding: 1rem;
-        box-sizing: border-box;
-        backdrop-filter: blur(5px);
-        text-align: center;
-    }
-    .new-item-input {
-        margin: auto;
-        text-align: center;
-        height: 50px;
-        width: 200px;
-    }
-    .input-box {
-        margin-top: 1rem;
-        height: 40px;
-        width: 200px;
-        box-shadow: 5px 5px 5px #0a0a0a29;
-        border: 1px solid #e74c3c;
-        border-radius: 0.5rem;
-    }
-    .add-btn {
-        margin-top: 1rem;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-        background-color: #e84343;
-        border-radius: 1rem;
-        color: white;
-        align-items: center;
-        margin: 1rem;
-        margin-bottom: 0;
-        display: inline-block;
-        cursor: pointer;
-    }
-    .trip-flex-mobile {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        margin: auto;
-        align-items: center;
-    }
-    .before-after-line:before {
-        display: none;
-    }
-    .before-after-line:after {
-        display: none;
-    }
-    .triptoparis {
-        font-size: 2rem;
-        font-weight: 900;
-        margin: 0;
-        width: fit-content;
-        position: relative;
-    }
-    .box-main {
-        height: 300px;
-        width: 300px;
-        border: 2px solid olivedrab;
-        border-radius: 0.5rem;
-        margin: auto;
-        box-shadow: 10px 10px 10px #0a0a0a29;
-        text-align: center;
-    }
-    .icon-style-2 {
-        color: #e84343;
-        cursor: pointer;
-        margin-top: 2rem;
-        margin-left: 15rem;
-        font-size: 2.5rem;
-    }
-    .subhead {
-        text-align: center;
-    }
-    .aiway {
-        margin-top: 0;
-    } */
-    @media only screen and (max-width:600px) {
-        .boxes {
-            padding: 0rem 0rem 0rem 0rem;
-            display: flex;
-            /* margin: auto; */
-            /* flex-wrap: wrap; */
-            /* row-gap: 2.5rem; */
-            width: 100%;
-            flex-direction: column;
-            flex-wrap: wrap;
-            background-color: yellow;
-            /* justify-content: center; */
-        }
-        .box{
-            margin: 0%;
-            width: 100%; 
-        }
-    }
